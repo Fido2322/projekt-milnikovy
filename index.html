@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Domovská stránka</title>
+  <style>
+    
+    .hodinky {
+      display: flex;
+      justify-content: center;
+    }
+    .hodinky a {
+      width: 100%;
+      max-width: 800px;
+      margin-bottom: 20px;
+    }
+    .hodinky img {
+     width: 70%;
+     border-radius: 8px;
+    }
+    .hodinky img:hover {
+      width: 75%;
+      transition: width 0.8s;
+    }
+    .linky :hover {
+      display: flex;
+      justify-content: center;
+      width: 60%;
+      transition: 0.5s;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="logo">
+      <svg height="30" width="120" xmlns="http://www.w3.org/2000/svg">
+        <text x="0" y="22" font-family="sans-serif" font-size="24" font-weight="bold" fill="black">MojeLogo</text>
+      </svg>
+    </div>
+    <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+    <label for="menu-toggle" class="hamburger">☰</label>
+    <ul class="nav-links">
+      <li><a href="index.html">Domů</a></li>
+      <li><a href="index2.html">O nás</a></li>
+      <li><a href="index1.html">Detail produktu</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <hgroup style="padding-left: 23px;">
+      <h2 style="margin-bottom: 5px;">Nové kolekce a modely</h2>
+      <p style="margin-top: 0;">Aktualizováno: <time datetime="2026-11-05">5. listopadu 2026</time></p>
+    </hgroup>
+  </header>
+
+  <aside class="aside">Naše oblíbené: </aside>
+  
+  <main>
+    <div class="linky">
+      <a href="index1.html"><img
+          src="https://cdn.myshoptet.com/usr/www.mabell.cz/user/shop/big/6238_set-hodinek-a-naramku-z-chirurgicke-oceli-royal-gold-green-1.jpg?ff=1&x=1024&y=1024&q=85&ts=682c49bc&sg=38cb01fe"
+          alt="Úvodní obrázek"></a>
+      <a href="index1.html" id="border"><img
+          src="https://cdn.myshoptet.com/usr/www.mabell.cz/user/shop/big/6238_set-hodinek-a-naramku-z-chirurgicke-oceli-royal-gold-green-1.jpg?ff=1&x=1024&y=1024&q=85&ts=682c49bc&sg=38cb01fe"
+          alt="Úvodní obrázek"></a>
+      <a href="index1.html" id="border"><img
+          src="https://cdn.myshoptet.com/usr/www.mabell.cz/user/shop/big/6238_set-hodinek-a-naramku-z-chirurgicke-oceli-royal-gold-green-1.jpg?ff=1&x=1024&y=1024&q=85&ts=682c49bc&sg=38cb01fe"
+          alt="Úvodní obrázek"></a>
+    </div>
+
+    <div style="margin-top: 40px;">
+      <aside class="dalsi">Další produkty: </aside>
+      <div class="hodinky"><a href="index1.html"><img src="https://www.hodinarstvibechyne.cz/res/crc-3271064454/storage/780x780/593-su-m279173-0001.avif" alt=""></a></div>
+      <div class="hodinky"><a href="index1.html"><img src="https://www.hodinarstvibechyne.cz/res/crc-702901734/storage/2360x2360/617-69-m279160-0013.avif" alt=""></a></div>
+    </div>
+  </main>
+
+  <footer class="paticka">
+    <p>@Filip Nahlovsky | IČO: 12345678 <br> <a href="index.html">Domů</a> | <a href="index2.html">O nás</a> | <a href="index1.html">Detail produktu</a></p>
+  </footer>
+
+</body>
+
+</html>

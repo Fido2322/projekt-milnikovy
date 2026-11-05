@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Detail produktu</title>
+  <style>
+    .detail-kontejner {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 0 15px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .detail-hlavni { flex: 2; min-width: 300px; }
+    .detail-panel { flex: 1; min-width: 250px; background: #f9f9f9; padding: 20px; border-radius: 8px; border-left: 3px solid #333; }
+    .galerie img { width: 18%; min-width: 120px; margin: 5px; border-radius: 4px; }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="logo">
+      <svg height="30" width="120" xmlns="http://www.w3.org/2000/svg">
+        <text x="0" y="22" font-family="sans-serif" font-size="24" font-weight="bold" fill="black">MojeLogo</text>
+      </svg>
+    </div>
+    <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+    <label for="menu-toggle" class="hamburger">☰</label>
+    <ul class="nav-links">
+      <li><a href="index.html">Domů</a></li>
+      <li><a href="index2.html">O nás</a></li>
+      <li><a href="index1.html">Detail produktu</a></li>
+    </ul>
+  </nav>
+
+  <div class="detail-kontejner">
+    <main class="detail-hlavni">
+      <header>
+        <hgroup>
+          <h1 style="margin-bottom: 5px;">Rolex Lady-Datejust</h1>
+          <p style="margin-top: 0;">Dokonalá elegance a nadčasový design.</p>
+        </hgroup>
+        <p>Publikováno: <time datetime="2026-10-15">15. října 2026</time></p>
+      </header>
+
+      <section>
+        <h2>Představení modelu</h2>
+        <p>Tento model v sobě snoubí špičkové materiály a spolehlivý automatický stroj. Pouzdro je vyrobeno z vysoce odolné <mark>oceli Oystersteel</mark> a zlata. Sklíčko tvoří safír s <abbr title="Antireflexní vrstva">AR</abbr> úpravou.</p>
+      </section>
+
+      <h3>Galerie produktu</h3>
+      <div class="galerie">
+        <img srcset="https://www.hodinarstvibechyne.cz/res/crc-3271064454/storage/780x780/593-su-m279173-0001.avif 780w" src="https://www.hodinarstvibechyne.cz/res/crc-3271064454/storage/780x780/593-su-m279173-0001.avif" alt="Rolex 1">
+        <img srcset="https://www.hodinarstvibechyne.cz/res/crc-702901734/storage/2360x2360/617-69-m279160-0013.avif 1000w" src="https://www.hodinarstvibechyne.cz/res/crc-702901734/storage/2360x2360/617-69-m279160-0013.avif" alt="Rolex 2">
+        <img srcset="https://www.hodinarstvibechyne.cz/res/crc-3271064454/storage/780x780/593-su-m279173-0001.avif 780w" src="https://www.hodinarstvibechyne.cz/res/crc-3271064454/storage/780x780/593-su-m279173-0001.avif" alt="Rolex 3">
+        <img srcset="https://www.hodinarstvibechyne.cz/res/crc-702901734/storage/2360x2360/617-69-m279160-0013.avif 1000w" src="https://www.hodinarstvibechyne.cz/res/crc-702901734/storage/2360x2360/617-69-m279160-0013.avif" alt="Rolex 4">
+        <img srcset="https://www.hodinarstvibechyne.cz/res/crc-3271064454/storage/780x780/593-su-m279173-0001.avif 780w" src="https://www.hodinarstvibechyne.cz/res/crc-3271064454/storage/780x780/593-su-m279173-0001.avif" alt="Rolex 5">
+      </div>
+    </main>
+
+    <aside class="detail-panel">
+      <h3>Parametry</h3>
+      <ul>
+        <li>Průměr: 28 mm</li>
+        <li>Materiál: Ocel a zlato</li>
+        <li>Vodotěsnost: 100 m</li>
+      </ul>
+      <h3>Glosář</h3>
+      <p><strong>Oystersteel:</strong> Speciální vysoce odolná ocel.</p>
+    </aside>
+  </div>
+
+  <footer class="paticka">
+    <p>@Filip Nahlovsky | IČO: 12345678 <br> <a href="index.html">Domů</a> | <a href="index2.html">O nás</a> | <a href="index1.html">Detail produktu</a></p>
+  </footer>
+
+</body>
+
+</html>

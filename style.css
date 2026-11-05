@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #ffffff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff; 
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  padding: 10px 15px;
+  position: relative;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.menu-checkbox {
+  display: none;
+}
+
+.hamburger {
+  font-size: 28px;
+  cursor: pointer;
+  user-select: none;
+  display: inline-block;
+  transition: transform 0.25s ease;
+}
+
+.menu-checkbox:checked + .hamburger {
+  transform: rotate(90deg);
+}
+
+.nav-links {
+  display: none; 
+  flex-direction: column;
+  width: 100%;
+  background-color: #f9f9f9;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none; 
+  z-index: 100;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.nav-links li a {
+  display: block;
+  padding: 15px;
+  color: #333;
+  text-decoration: none;
+  text-align: center;
+  border-bottom: 1px solid #ddd; 
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.menu-checkbox:checked ~ .nav-links {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+  .menu-checkbox {
+    display: none;
+  }
+  .nav-links {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    background-color: transparent;
+    width: auto;
+    box-shadow: none;
+  }
+  .nav-links li a {
+    border-bottom: none;
+    padding: 0 15px;
+  }
+}
+
+.linky {
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+  justify-content: space-evenly;
+}
+
+.linky a {
+  padding: 5px 5px;
+  width: 33%; 
+}
+
+#border {
+  border-left: 2px solid #2d2b2b;
+}
+
+.linky img {
+  max-width: 100%;
+  height: auto;
+}
+
+.text1 {
+  padding: 15px;
+  font-size: 35px;
+}
+
+.Onas img {
+  padding-left: -5px;
+  width: 100%;
+}
+
+.textonas {
+  padding: 5px 10px;
+  font-size: 18px;
+}
+
+.paticka {
+  background-color: black;
+  width: 100%;
+  min-height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  padding: 15px 0;
+}
+
+.paticka p {
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  margin: 0;
+  line-height: 1.8;
+}
+
+.paticka a {
+  color: white;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.paticka a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .paticka {
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 15px 20px;
+  }
+  .paticka p {
+    text-align: right;
+  }
+}
+
+.Adresy {
+  padding-left: 15px;
+}
+
+.kdosme {
+  border-top: 1px solid #ddd; 
+}
